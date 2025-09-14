@@ -1,6 +1,6 @@
+import CountUp from "@/components/ui/animations/CountUp";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Users, MapPin, Award } from "lucide-react";
-import CountUp from "./ui/animations/CountUp";
 
 const StatsSection = () => {
   const stats = [
