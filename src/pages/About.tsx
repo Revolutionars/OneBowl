@@ -30,21 +30,21 @@ const About = () => {
 
   const team = [
     {
-      name: "Priya Sharma",
+      name: "Vaibhav Sharma",
       role: "Founder & CEO",
-      description: "Animal welfare advocate with 10+ years of NGO experience. Started OneBowl after rescuing 50+ street dogs.",
+      description: "passionate about building solutions that create real social impact as  my vision is to make animal feeding donations transparent, trackable, and accessible for everyone.  ",
       icon: Heart
     },
     {
-      name: "Arjun Patel",
+      name: "Aditya Shahi",
       role: "Operations Head",
       description: "Former logistics manager who ensures every donation reaches the right animals at the right time.",
       icon: Target
     },
     {
-      name: "Dr. Meera Nair",
-      role: "Veterinary Advisor",
-      description: "Licensed veterinarian providing guidance on animal nutrition and welfare standards.",
+      name: "Sourav Sharma",
+      role: "Advisor",
+      description: "providing guidance on animal nutrition and welfare standards.",
       icon: Shield
     }
   ];
@@ -87,19 +87,19 @@ const About = () => {
             <div className="bg-gradient-to-br from-nature-primary/10 to-nature-secondary/10 rounded-2xl p-8 animate-scale-in">
               <div className="grid grid-cols-2 gap-6 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-nature-primary mb-2">2023</div>
+                  <div className="text-3xl font-bold text-nature-primary mb-2">2025</div>
                   <div className="text-sm text-muted-foreground">Founded</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-nature-primary mb-2">50K+</div>
+                  <div className="text-3xl font-bold text-nature-primary mb-2">50+</div>
                   <div className="text-sm text-muted-foreground">Animals Fed</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-nature-primary mb-2">150+</div>
+                  <div className="text-3xl font-bold text-nature-primary mb-2">5+</div>
                   <div className="text-sm text-muted-foreground">Cities</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-nature-primary mb-2">12K+</div>
+                  <div className="text-3xl font-bold text-nature-primary mb-2">1K+</div>
                   <div className="text-sm text-muted-foreground">Donors</div>
                 </div>
               </div>

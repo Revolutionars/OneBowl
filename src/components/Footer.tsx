@@ -100,26 +100,34 @@ const Footer = () => {
                     href="mailto:support@lav.com" 
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    support@lav.com
+                    onebowl.lav@gmail.com
+
                   </a>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-muted-foreground mt-0.5" />
-                <div>
-                  <a 
-                    href="tel:+911234567890" 
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    +91 12345 67890
-                  </a>
-                </div>
-              </li>
+             <li className="flex items-start gap-3">
+  <Phone className="w-5 h-5 text-muted-foreground mt-0.5" />
+  <div className="flex flex-col">
+    <a 
+      href="tel:+919953048059" 
+      className="text-muted-foreground hover:text-foreground transition-colors"
+    >
+      9953048059
+    </a>
+    <a 
+      href="tel:+919871050724" 
+      className="text-muted-foreground hover:text-foreground transition-colors"
+    >
+      9871050724
+    </a>
+  </div>
+</li>
+
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-muted-foreground mt-0.5" />
                 <div>
                   <span className="text-muted-foreground">
-                    Mumbai, Maharashtra<br />
+                    New Delhi, Delhi<br />
                     India
                   </span>
                 </div>
