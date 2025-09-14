@@ -101,13 +101,13 @@ const About = () => {
               <div className="grid grid-cols-2 gap-6 text-center">
                 <div>
                   <div className="text-3xl font-bold text-nature-primary mb-2">
-                    2023
+                    2025
                   </div>
                   <div className="text-sm text-muted-foreground">Founded</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-nature-primary mb-2">
-                    50K+
+                    1K+
                   </div>
                   <div className="text-sm text-muted-foreground">
                     Animals Fed
@@ -115,13 +115,13 @@ const About = () => {
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-nature-primary mb-2">
-                    150+
+                    5+
                   </div>
                   <div className="text-sm text-muted-foreground">Cities</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-nature-primary mb-2">
-                    12K+
+                    1K+
                   </div>
                   <div className="text-sm text-muted-foreground">Donors</div>
                 </div>
