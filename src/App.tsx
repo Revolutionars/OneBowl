@@ -9,9 +9,7 @@ import HowItWorks from "./pages/HowItWorks";
 import Impact from "./pages/Impact";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOfService from "./pages/TermsOfService";
-import CookiePolicy from "./pages/CookiePolicy";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -22,9 +20,7 @@ const App = () => (
       <BrowserRouter>
          <ScrollToTop />
         <Routes>
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-<Route path="/terms-of-service" element={<TermsOfService />} />
-<Route path="/cookie-policy" element={<CookiePolicy />} />
+        
           <Route path="/" element={<Index />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/impact" element={<Impact />} />
