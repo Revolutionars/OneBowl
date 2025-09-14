@@ -6,19 +6,19 @@ const StatsSection = () => {
   const stats = [
     {
       icon: Heart,
-      number: "2,547",
+      number: "25",
       label: "Animals Fed",
       description: "This month",
     },
     {
       icon: Users,
-      number: "1,239",
+      number: "1,2",
       label: "Kind Donors",
       description: "Growing daily",
     },
     {
       icon: MapPin,
-      number: "47",
+      number: "4",
       label: "Locations",
       description: "Across the city",
     },

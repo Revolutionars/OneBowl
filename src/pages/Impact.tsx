@@ -8,19 +8,19 @@ const Impact = () => {
   const stats = [
     {
       icon: Heart,
-      number: "50,000+",
+      number: "50+",
       label: "Animals Fed",
       description: "Across dogs, cats, cows, monkeys, and birds"
     },
     {
       icon: Users,
-      number: "12,000+",
+      number: "12+",
       label: "Active Donors",
       description: "Compassionate people making a difference"
     },
     {
       icon: MapPin,
-      number: "150+",
+      number: "15+",
       label: "Cities Covered",
       description: "Spreading kindness across the nation"
     },
@@ -34,16 +34,16 @@ const Impact = () => {
 
   const stories = [
     {
-      title: "Street Dogs in Mumbai",
-      location: "Mumbai, Maharashtra",
-      impact: "2,500 meals delivered this month",
+      title: "Street Dogs in Delhi",
+      location: "Najafgarh, Delhi",
+      impact: "20 meals delivered this month",
       image: "/placeholder.svg",
-      description: "Thanks to generous donors, street dogs in Mumbai's busy areas now receive regular nutritious meals."
+      description: "Thanks to generous donors, street dogs in Delhi's busy areas now receive regular nutritious meals."
     },
     {
-      title: "Temple Cows in Varanasi",
-      location: "Varanasi, Uttar Pradesh", 
-      impact: "500 kg fodder donated weekly",
+      title: "Temple Cows in Inderlok",
+      location: "New Delhi, Delhi", 
+      impact: "50 kg fodder donated weekly",
       image: "/placeholder.svg",
       description: "Sacred cows near temples receive fresh fodder and care through our community feeding program."
     },
