@@ -13,30 +13,36 @@ const AnimalsSection = () => {
       emoji: "🐶",
       image: dogImage,
       description: "Street dogs and shelter pups waiting for their next meal",
+        foods: ["Biscuits", "Pedigree", "Milk", "Kibble", "Treats"]
     },
     {
       name: "Cats",
       emoji: "🐱",
       image: catImage,
       description: "Feline friends who need love and nourishment",
+       foods: ["Cat Food", "Milk", "Fish", "Tuna"]
     },
     {
       name: "Cows",
       emoji: "🐄",
       image: cowImage,
       description: "Gentle giants providing for us, deserving care in return",
+      foods: ["Hay", "Grass", "Grains", "Feed"]
     },
     {
       name: "Monkeys",
       emoji: "🐒",
       image: monkeyImage,
       description: "Playful primates looking for fruits and treats",
+      foods: ["Bananas", "Fruits", "Nuts", "Seeds"]
     },
     {
       name: "Birds",
       emoji: "🐦",
       image: birdImage,
       description: "Hardy farm animals that bring joy to rural communities",
+       foods: ["Seeds", "Grains", "Breadcrumbs", "Millet"]
+      
     },
   ];
 
@@ -74,6 +80,7 @@ const AnimalsSection = () => {
                 emoji={animal.emoji}
                 image={animal.image}
                 description={animal.description}
+                foods={animal.foods}
                 onClick={() => handleAnimalClick(animal.name)}
               />
             </div>

@@ -1,8 +1,12 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Heart, ShoppingCart, Camera, Gift } from "lucide-react";
+import { Heart, ShoppingCart, Camera, Gift, MapPin, Award, CreditCard, Truck } from "lucide-react";
+
 import Navbar from "@/views/Navbar";
 import Footer from "@/views/Footer";
+import goldMedal from '@/assets/gold-medal.png';
+import silverMedal from '@/assets/silver-medal.png';
+import bronzeMedal from '@/assets/bronze-medal.png';
 import { useNavigate } from "react-router-dom";
 const HowItWorks = () => {
    const navigate = useNavigate();
@@ -18,31 +22,47 @@ const HowItWorks = () => {
   const steps = [
     {
       icon: Heart,
-      title: "Choose Your Animal",
-      description:
-        "Select from dogs, cats, cows, monkeys, birds, and more. Each animal has their own favorite foods and treats.",
+      title: "Choose Your Friend",
+      description: "Select which animal you'd like to help - dogs, cats, cows, or any other friend in need.",
       color: "text-nature-primary",
     },
     {
       icon: ShoppingCart,
-      title: "Select Food & Quantity",
-      description:
-        "Pick the type of food and quantity you'd like to donate. From biscuits to fresh fruits, every meal counts.",
+       title: "Pick Their Meal",
+      description: "Browse food options perfect for your chosen animal and select the quantity you'd like to donate.",
       color: "text-nature-secondary",
     },
     {
-      icon: Gift,
-      title: "Make Your Donation",
-      description:
-        "Complete your secure donation through our trusted payment partners. Choose to donate anonymously or with your name.",
+     
+     icon: CreditCard,
+      title: "💳 Make Your Donation",
+      description: "Secure payment through UPI, PayPal, or Razorpay. Choose to donate anonymously or with your name.",
       color: "text-accent",
     },
     {
-      icon: Camera,
-      title: "Track & See Impact",
-      description:
-        "Follow your donation from purchase to delivery. Receive photos and videos of the animals enjoying their meal.",
+       icon: Truck,
+      title: "We Deliver",
+      description: "Our trusted partners purchase and deliver the food directly to animals in shelters and streets.",
       color: "text-primary",
+    },
+    {
+      icon: MapPin,
+      title: "📍 Location Tracking",
+      description: "See exactly where your food was delivered on a map with real-time tracking updates.",
+      color: "text-nature-primary",
+    },
+    {
+      icon: Camera,
+      title: "See the Impact",
+      description: "Receive photos and videos showing your food being delivered and animals being fed.",
+      color: "text-nature-secondary",
+    },
+    {
+      icon: Award,
+      title: "🏆 Impact Badges",
+      description: "Get personalized impact reports and certificates with impact badges for your contributions.",
+      color: "text-accent",
+      medals: [goldMedal, silverMedal, bronzeMedal]
     },
   ];
 
@@ -57,8 +77,8 @@ const HowItWorks = () => {
             How It <span className="text-nature-primary">Works</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in">
-            From selecting an animal to seeing your impact, our simple 4-step
-            process makes feeding animals easy and transparent.
+          Just few steps between your kindness and a full belly, with complete
+            transparency and impact tracking.
           </p>
         </div>
       </section>
@@ -66,7 +86,7 @@ const HowItWorks = () => {
       {/* Steps Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {steps.map((step, index) => (
               <div
                 key={index}
@@ -89,6 +109,18 @@ const HowItWorks = () => {
                     <p className="text-muted-foreground leading-relaxed">
                       {step.description}
                     </p>
+                     {step.medals && (
+                      <div className="flex justify-center gap-10 mt-4">
+                        {step.medals.map((medal, medalIndex) => (
+                          <img
+                            key={medalIndex}
+                            src={medal}
+                            alt={`Medal ${medalIndex + 1}`}
+                            className="w-8 h-8 object-contain"
+                          />
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
