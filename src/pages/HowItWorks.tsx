@@ -3,8 +3,18 @@ import { Button } from "@/components/ui/button";
 import { Heart, ShoppingCart, Camera, Gift } from "lucide-react";
 import Navbar from "@/views/Navbar";
 import Footer from "@/views/Footer";
-
+import { useNavigate } from "react-router-dom";
 const HowItWorks = () => {
+   const navigate = useNavigate();
+
+  const navigateToAnimals = () => {
+    navigate("/");
+    setTimeout(() => {
+      const animalsSection = document.getElementById("animals-section");
+      animalsSection?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+
   const steps = [
     {
       icon: Heart,
@@ -97,7 +107,7 @@ const HowItWorks = () => {
             Join thousands of compassionate people who are already feeding
             animals in need.
           </p>
-          <Button variant="hero" size="lg" className="animate-scale-in">
+              <Button variant="hero" size="lg" className="animate-scale-in" onClick={navigateToAnimals}>
             Start Feeding Animals
             <Heart className="ml-2 w-5 h-5" />
           </Button>
